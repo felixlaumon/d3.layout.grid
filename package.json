@@ -1,0 +1,22 @@
+{
+  "name": "d3.layout.grid",
+  "version": "0.0.1",
+  "description": "Lightweight grid layout designed for categorical data",
+  "main": "index.js",
+  "directories": {
+    "example": "examples"
+  },
+  "keywords": [
+    "grid",
+    "d3",
+    "layout",
+    "categorical",
+    "category"
+  ],
+  "author": "Felix Lau <felixlaumon@gmail.com>",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:felixlaumon/d3.layout.grid.git"
+  }
+}

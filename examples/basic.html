@@ -1,0 +1,74 @@
+<!doctype>
+<html>
+<head>
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+  <style>
+    text {
+      font-family: "Helvetica Neue", "Helvetica", sans-serif;
+      font-size: 16px;
+      font-weight: 200;
+    }
+
+    .controller {
+      padding-top: 20px;
+      border: 1px solid #eee;
+      border-radius: 4px;
+    }
+
+    svg {
+      border: 1px solid #eee;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="page-header">d3.layout.grid</h1>
+    <form class="form-horizontal controller" role="form">
+      <div class="form-group">
+        <label class="col-sm-2 control-label">Group by:</label>
+        <div class="btn-group col-sm-10">
+          <button type="button" class="btn btn-default" id="groupby-shape">Shape</button>
+          <button type="button" class="btn btn-default" id="groupby-size">Size</button>
+          <button type="button" class="btn btn-default" id="groupby-color">Color</button>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-sm-2 control-label">Sort Group:</label>
+        <div class="btn-group col-sm-10">
+          <button type="button" class="btn btn-default" id="group-ascend">
+            <span class="glyphicon glyphicon-sort-by-alphabet"></span>
+            Ascending
+          </button>
+          <button type="button" class="btn btn-default" id="group-descend">
+            <span class="glyphicon glyphicon-sort-by-alphabet-alt"></span>
+            Descending
+          </button>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-sm-2 control-label">Sort Size:</label>
+        <div class="btn-group col-sm-10">
+          <button type="button" class="btn btn-default" id="size-ascend">
+            <span class="glyphicon glyphicon glyphicon-sort-by-attributes"></span>
+            Ascending
+          </button>
+          <button type="button" class="btn btn-default" id="size-descend">
+            <span class="glyphicon glyphicon glyphicon-sort-by-attributes-alt"></span>
+            Descending
+          </button>
+        </div>
+      </div>
+    </form>
+
+    <svg></svg>
+  </div>
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.4.6/d3.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.js"></script>
+  <script src="../index.js"></script>
+  <script src="basic.js"></script>
+</body>
+
+</html>
