@@ -95,7 +95,7 @@ function grid () {
 
       ds.sort(dataComparator)
       .forEach(function (d) {
-        if (x0 + config.colWidth > width) {
+        if (x0 + config.colWidth > config.width) {
           x0 = config.marginLeft;
           y0 += config.rowHeight;
         }
